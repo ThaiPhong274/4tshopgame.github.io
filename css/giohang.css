@@ -1,0 +1,107 @@
+#xoa_all_sp{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+#clear_all{
+    width: 200px;
+    height: 30px;
+    background: #FF8000;
+    border: 0;
+}
+#clear_all:hover{
+    background: #FE2E2E;
+}
+#sp_da_them{
+    float: left 1000px;
+    width: 70%;
+    height: auto;
+}
+.sp_cua_ban{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 80%;
+    height: 180px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+.sp_cua_ban img{
+    float: left;
+    width:120px; 
+    height: 160px;
+    margin:10px 5px 0px 15px; 
+}
+/* thong tin gio hang */
+.thong_tin_sp{
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.thong_tin_sp a{
+    font-size: 25px;
+    color:  #FF8000;
+}
+/* gia cua sp  */
+.gia_sp{
+    margin-top: 20px;
+    float: left;
+    width: 150px;
+    margin-left: 15px;
+}
+.gia_sp p{
+    font-size: 25px;
+    color:#FE2E2E;
+}
+/* so luong */
+.so_luong_cart{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 100px;
+}
+.soluongsp{
+    width:40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+/* tong tien cua hoa don */
+#tong_tien{
+    float: left;
+    margin-top: 10px;
+    width: 25%;
+    height: 300px;
+    color: white;
+}
+#tong_tien p{
+    font-size: 23px;
+    padding-top: 30px;
+    margin-bottom: 20px;  
+}
+#tong_tien span{
+    float: right;
+    margin-right:15px;
+}
+.xac_nhan_cart{
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 40px;
+    background: #FF8000;
+    border: 0;
+}
+.xac_nhan_cart:hover{
+    background: #FE2E2E;
+}
+#contentcart{
+    width: 99.4%;
+    height: 1100px;
+    background: #231E1E;
+    border: solid;
+    border-color: gray;
+    color: white;
+    position: absolute;
+    right: 0px;
+}

@@ -1,0 +1,81 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DoanWebNhomPV.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>4T Shop</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+
+<body>
+    <form runat="server">
+
+        <%--Header--%>
+        <div style="width: 80%; margin: 0 auto">
+            <div id="header">
+			<a href="index.aspx"><img src="img/icon.png" width="100" style="margin-left: 50px; margin-top: 10px; float: left" /></a>	
+			<div id="member">
+			</div>
+		</div>
+
+            <nav id="menu" style="clear: both">
+                <ul>
+                    <li><a href="index.aspx">Trang chủ</a></li>
+                    <li><a href="https://www.gamespot.com/news/">Tin tức</a></li>
+                    <li><a href="thongtin.aspx">Thông tin</a></li>
+                    <li><a href="#">Lịch sử mua hàng</a></li>   
+                </ul>
+            </nav>
+
+        <%--Body--%>
+         <div>  
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"  />
+		</div>
+
+
+        <%--Footer--%>
+            <div id="footer">
+          	    <div id="support">
+                    <p style="color: red">HỖ TRỢ KHÁCH HÀNG</p>
+                    <p class="fa fa-phone">&nbsp;&nbsp;1900-8888 (50đ/1 phút)<br>
+                    (8h00-22h00)</p>
+					<p class="fa fa-envelope">&nbsp;&nbsp;hotro@4tshop.vn</p>
+                	<p>Copyright &copy 2022 All Right Reserved</p>
+            </div>
+            <div id="about-me">
+                    <p style="color: red">ĐỊA CHỈ LIÊN HỆ VÀ GIAO DỊCH</p>
+                    <p>
+                    Trụ sở chính: 140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP. Hồ Chí Minh<br>
+                    Chi nhánh 1: 12 Trịnh Đình Thảo, Hòa Thạnh, Tân Phú, TP. Hồ Chí Minh<br>	  
+                    Khoa CNTT - Trường Đại học Công Nghiệp Thực Phẩm TPHCM
+                    </p>
+            </div>
+            <div id="mang-xa-hoi">
+                    <p style="color: red">KẾT NỐI VỚI CHÚNG TÔI</p>
+                    <div style="float: left; margin-left: 80px; margin-right: 10px;"><a href="https://www.facebook.com/TuyensinhHUFI/" target="_blank"><img src="img/facebook.png" width="40px" height="40px"></a></div>
+                    <div style="float: left; margin-right: 10px;"><a href="https://hufi.edu.vn/ "target="_blank"><img src="img/zalo.png" width="40px" height="40px"></a></div>
+                    <div style="float: left;"><a href="https://www.youtube.com/?gl=VN" target="_blank"><img src="img/youtube.png" width="40px" height="40px"></a></div>
+            </div>
+                <div id="thanh-toan">
+                    <p style="color: red;">PHƯƠNG THỨC THANH TOÁN</p>
+                    <div>
+                        <div style="float: left; margin-left: 50px; margin-right: 15px;"><img src="img/visa.png"></div>
+						<div style="float: left; margin-right: 15px;"><img src="img/jcb.png"></div>
+                        <div style="float: left;"><img src="img/money.png"></div>
+                </div>
+            </div>
+    	</div>
+	</div>  
+    </form>
+    <script src="js/MasterPage.js"></script>
+</body>
+</html>

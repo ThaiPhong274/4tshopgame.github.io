@@ -1,0 +1,36 @@
+@import "header.css";
+@import "footer.css";
+
+
+#body {
+    width: 600px;
+    height: 300px;
+    background-color: #231E1E;
+    position: relative;
+    margin: 0 auto;
+    border: solid;
+    padding-top: 10px;
+    border-color: gray;
+    color: white;
+}
+
+form input {
+    background-color: #393939;
+    color: #FFF;
+}
+
+.cap {
+    float: left;
+    width: 190px;
+    margin-top: 2px;
+    text-align: right;
+}
+
+.button {
+    background-color: black;
+    color: white
+}
+
+.label {
+    color: red;
+}

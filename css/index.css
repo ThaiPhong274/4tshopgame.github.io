@@ -1,0 +1,306 @@
+﻿@import "header.css";
+@import "footer.css";
+
+
+body {
+    background-image: url('../img/Witcher-3-415-2060x1288 - Copy.jpg');
+    background-attachment: fixed;
+}
+
+.datalist {
+    width: 100%;
+}
+
+/*các Danh mục*/
+.category {
+    line-height: 35px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #27303d;
+}
+
+/*Màu danh mục được chọn*/
+.background_selected {
+    background-color: #6d98de;
+}
+
+/*Sản phẩm*/
+.product {
+    width: 30%;
+    height: 300px;
+    float: left;
+    border: solid;
+    border-color: gray;
+    text-align: center;
+    position: relative;
+    margin: 1%;
+    margin-left: 12px;
+}
+
+.Linkbtn {
+    text-decoration: none;
+}
+
+/*Màu menulist*/
+#menulist {
+    width: 15%;
+    height: auto;
+    background: black;
+    border: solid;
+    border-color: gray;
+    color: white;
+    position: absolute;
+}
+
+#productlist {
+    width: 82%;
+    height: 1100px;
+    background: #231E1E;
+    border: solid;
+    border-color: gray;
+    color: white;
+    position: absolute;
+    right: 0px;
+}
+
+#sotrang {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.buy {
+    background: red;
+    border-color: red;
+    border-radius: 4px;
+    color: white;
+}
+
+#hinhsp {
+    width: 100%;
+    height: 170px;
+}
+
+.tensp {
+    position: absolute;
+    left: 200px;
+}
+
+
+.number {
+    color: black;
+    text-decoration: none;
+    background: white;
+    border: solid;
+    border-color: white;
+    margin: 2px;
+}
+
+.product {
+    background: black;
+}
+
+.tieudesp {
+    margin-left: 20px;
+    font-family: Myriad Pro;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+/*Thanh thao tác menu*/
+#menu {
+    background: #222222;
+}
+
+    #menu ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #menu li {
+        display: inline-block;
+        width: 20%;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+        position: relative;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+        #menu a:hover {
+            background: white;
+            color: black;
+        }
+
+    #menu li:hover .submenu {
+        display: block;
+    }
+
+/*==Slide Show==*/
+article {
+    height: 355px;
+}
+
+    article #slideShow {
+        position: relative;
+        height: 350px;
+    }
+
+        article #slideShow .images {
+            position: absolute;
+            float: left;
+            font-family: roboto, sans-serif;
+            overflow: visible;
+            text-align: center;
+            max-height: 355px;
+            min-height: 355px;
+            z-index: 3;
+            transition: all 0.4s;
+        }
+
+            article #slideShow .images:hover {
+                filter: blur(1px);
+                -webkit-filter: blur(1px);
+                -moz-filter: blur(1px);
+                cursor: pointer;
+            }
+/*==Fade==*/
+.fade {
+    -webkit-animation-name: carouselfade;
+    -webkit-animation-duration: 1.5s;
+    animation: fade;
+    animation-duration: 8.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+/*==End fade==*/
+.prev, .next {
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 120px;
+    padding: 16px;
+    color: white;
+    transition: 0.6s ease;
+    z-index: 999;
+}
+
+.next {
+    position: absolute;
+    right: 0px;
+}
+
+    .prev:hover, .next:hover {
+        color: #47E09B;
+        background-color: #000;
+    }
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0px 2px;
+    margin-right: 2px;
+    background-color: #a0a0a0;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #444444;
+    }
+
+/*==End Slide Show==*/
+article .selection {
+    position: relative;
+    float: right;
+    height: 357px;
+    width: 30%;
+    font-family: roboto, sans-serif;
+    background: #FFE226;
+    z-index: 3;
+}
+
+    article .selection .row {
+        position: relative;
+        overflow: hidden;
+        background: #02FB00;
+        height: 33.3%;
+        width: 500px;
+        z-index: 3;
+    }
+
+        article .selection .row .contimg > img {
+            position: absolute;
+            float: left;
+            height: 119px;
+            z-index: 2;
+        }
+
+            article .selection .row .contimg > img:hover {
+                cursor: pointer;
+                filter: blur(2px);
+                -webkit-filter: blur(2px);
+                -moz-filter: blur(2px);
+            }
+
+        article .selection .row .text {
+            margin-left: 119px;
+            border-left: #02FB00 1px solid;
+            background: #000000;
+            position: absolute;
+            width: 350px;
+            height: 119px;
+            z-index: 2;
+        }
+
+            article .selection .row .text > h3 {
+                display: block;
+                background: #000000;
+                padding-left: 10px;
+                position: absolute;
+                color: #D48C3B;
+                z-index: 5;
+                transition: all 1s;
+            }
+
+                article .selection .row .text > h3:hover {
+                    cursor: pointer;
+                    color: white;
+                }
+
+            article .selection .row .text > p {
+                background: #000000;
+                color: #FFFFFF;
+                text-align: left;
+                position: absolute;
+                margin-top: 28px;
+                padding-left: 10px;
+                overflow: auto;
+                display: block;
+                z-index: 5;
+            }

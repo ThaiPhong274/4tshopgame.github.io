@@ -1,0 +1,26 @@
+
+#wrapper {
+    width: 700px;
+    height: 250px;
+    background: #231E1E;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border: solid;
+    border-color: gray;
+    color: #fff
+}
+
+
+form input{
+	background-color: #393939;
+	color:#FFF;
+}
+
+
+.label{
+    color: red;
+}
+
+
+

@@ -1,0 +1,22 @@
+﻿.datalist {
+    width: 100%;
+}
+
+#sanpham {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: #231E1E;
+    border: solid;
+    border-color: gray;
+    color: white;
+    position: relative;
+}
+
+#tensanpham {
+    font-family: Myriad Pro;
+    font-size: 30px;
+    margin-left: 10%;
+    width: 80%;
+    color: #F7CF0C;
+}

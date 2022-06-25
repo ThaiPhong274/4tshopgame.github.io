@@ -1,0 +1,440 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6905E682-CE17-46F6-B1EB-2063DF77D24C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoanWebNhomPV</RootNamespace>
+    <AssemblyName>DoanWebNhomPV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DatabaseWeb.mdf" />
+    <Content Include="App_Data\DatabaseWeb_log.ldf">
+      <DependentUpon>DatabaseWeb.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\footer.css" />
+    <Content Include="css\giohang.css" />
+    <Content Include="css\header.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\sanpham.css" />
+    <Content Include="css\dangky.css" />
+    <Content Include="css\dangnhap.css" />
+    <Content Include="dangky.aspx" />
+    <Content Include="dangnhap.aspx" />
+    <Content Include="giohang.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="img\banner1.png" />
+    <Content Include="img\card\card10.jpg" />
+    <Content Include="img\card\card100.jpg" />
+    <Content Include="img\card\card2.jpg" />
+    <Content Include="img\card\card20.jpg" />
+    <Content Include="img\card\card25.jpg" />
+    <Content Include="img\card\card5.jpg" />
+    <Content Include="img\card\card50.jpg" />
+    <Content Include="img\content\aco\aco-0.jpg" />
+    <Content Include="img\content\aco\aco-1.jpg" />
+    <Content Include="img\content\aco\aco-2.jpg" />
+    <Content Include="img\content\aco\aco-3.jpg" />
+    <Content Include="img\content\aco\aco-4.jpg" />
+    <Content Include="img\content\aco\aco-new.jpg" />
+    <Content Include="img\content\ast\ast-0.jpg" />
+    <Content Include="img\content\ast\ast-1.jpg" />
+    <Content Include="img\content\ast\ast-2.jpg" />
+    <Content Include="img\content\ast\ast-3.jpg" />
+    <Content Include="img\content\ast\ast-4.jpg" />
+    <Content Include="img\content\ast\ast-5.jpg" />
+    <Content Include="img\content\atf\atf-0.jpg" />
+    <Content Include="img\content\atf\atf-1.jpg" />
+    <Content Include="img\content\atf\atf-2.jpg" />
+    <Content Include="img\content\atf\atf-3.jpg" />
+    <Content Include="img\content\atf\atf-4.jpg" />
+    <Content Include="img\content\atf\atf-5.jpg" />
+    <Content Include="img\content\atf\atf-6.jpg" />
+    <Content Include="img\content\bf5\bf5-0.jpg" />
+    <Content Include="img\content\bf5\bf5-00.jpg" />
+    <Content Include="img\content\bf5\bf5-1.jpg" />
+    <Content Include="img\content\bf5\bf5-2.jpg" />
+    <Content Include="img\content\bf5\bf5-3.jpg" />
+    <Content Include="img\content\bf5\bf5-4.png" />
+    <Content Include="img\content\bf5\bf5-5.jpg" />
+    <Content Include="img\content\bf5\bf5-new.jpg" />
+    <Content Include="img\content\csgo\csgo-0.jpg" />
+    <Content Include="img\content\csgo\csgo-1.jpg" />
+    <Content Include="img\content\csgo\csgo-2.jpg" />
+    <Content Include="img\content\dbd\dbd-0.jpg" />
+    <Content Include="img\content\dbd\dbd-1.jpg" />
+    <Content Include="img\content\dbd\dbd-2.jpg" />
+    <Content Include="img\content\dbd\dbd-3.jpg" />
+    <Content Include="img\content\dbd\dbd-4.jpg" />
+    <Content Include="img\content\dbd\dbd-5.jpg" />
+    <Content Include="img\content\dl\dl-0.jpg" />
+    <Content Include="img\content\dl\dl-1.jpg" />
+    <Content Include="img\content\dl\dl-2.jpg" />
+    <Content Include="img\content\dl\dl-3.jpg" />
+    <Content Include="img\content\dl\dl-4.jpg" />
+    <Content Include="img\content\dl\dl-5.jpg" />
+    <Content Include="img\content\dl\dl-6.jpg" />
+    <Content Include="img\content\ds3\ds3-0.jpg" />
+    <Content Include="img\content\ds3\ds3-1.jpg" />
+    <Content Include="img\content\ds3\ds3-2.jpg" />
+    <Content Include="img\content\ds3\ds3-3.jpg" />
+    <Content Include="img\content\ds3\ds3-4.jpg" />
+    <Content Include="img\content\ds3\ds3-5.jpg" />
+    <Content Include="img\content\ds3\ds3-new.jpg" />
+    <Content Include="img\content\fc5\fc5-0.jpg" />
+    <Content Include="img\content\fc5\fc5-1.jpg" />
+    <Content Include="img\content\fc5\fc5-2.jpg" />
+    <Content Include="img\content\ffxv\ffxv-0.jpg" />
+    <Content Include="img\content\ffxv\ffxv-1.jpg" />
+    <Content Include="img\content\ffxv\ffxv-2.jpg" />
+    <Content Include="img\content\ffxv\ffxv-3.jpg" />
+    <Content Include="img\content\ffxv\ffxv-4.jpg" />
+    <Content Include="img\content\ffxv\ffxv-5.jpg" />
+    <Content Include="img\content\ffxv\ffxv-6.jpg" />
+    <Content Include="img\content\ffxv\ffxv-7.jpg" />
+    <Content Include="img\content\fo4\fo4-0.jpg" />
+    <Content Include="img\content\fo4\fo4-1.jpg" />
+    <Content Include="img\content\fo4\fo4-2.jpg" />
+    <Content Include="img\content\fo4\fo4-3.jpg" />
+    <Content Include="img\content\fo4\fo4-4.jpg" />
+    <Content Include="img\content\fo4\fo4-5.jpg" />
+    <Content Include="img\content\gtav\gtav-0.jpg" />
+    <Content Include="img\content\gtav\gtav-1.jpg" />
+    <Content Include="img\content\gtav\gtav-2.jpg" />
+    <Content Include="img\content\hm2\hm2-0.jpg" />
+    <Content Include="img\content\hm2\hm2-1.jpg" />
+    <Content Include="img\content\hm2\hm2-2.jpg" />
+    <Content Include="img\content\hm2\hm2-new.jpg" />
+    <Content Include="img\content\hm2\hm3-3.jpg" />
+    <Content Include="img\content\hm2\hm3-4.jpg" />
+    <Content Include="img\content\hm2\hm3-5.jpg" />
+    <Content Include="img\content\hm2\hm3-6.jpg" />
+    <Content Include="img\content\hs\hs-0.jpg" />
+    <Content Include="img\content\hs\hs-1.jpg" />
+    <Content Include="img\content\hs\hs-2.jpg" />
+    <Content Include="img\content\hs\hs-3.jpg" />
+    <Content Include="img\content\hs\hs-4.jpg" />
+    <Content Include="img\content\hs\hs-5.jpg" />
+    <Content Include="img\content\jc4\jc4-0.jpg" />
+    <Content Include="img\content\jc4\jc4-1.jpg" />
+    <Content Include="img\content\jc4\jc4-2.jpg" />
+    <Content Include="img\content\jc4\jc4-3.jpg" />
+    <Content Include="img\content\jc4\jc4-4.jpg" />
+    <Content Include="img\content\jc4\jc4-new.jpg" />
+    <Content Include="img\content\jwe\jwe-0.jpg" />
+    <Content Include="img\content\jwe\jwe-1.jpg" />
+    <Content Include="img\content\jwe\jwe-2.jpg" />
+    <Content Include="img\content\jwe\jwe-3.jpg" />
+    <Content Include="img\content\jwe\jwe-4.jpg" />
+    <Content Include="img\content\jwe\jwe-5.jpg" />
+    <Content Include="img\content\jwe\jwe-6.jpg" />
+    <Content Include="img\content\l4d2\l4d2-0.jpg" />
+    <Content Include="img\content\l4d2\l4d2-1.jpg" />
+    <Content Include="img\content\l4d2\l4d2-2.jpg" />
+    <Content Include="img\content\l4d2\l4d2-3.jpg" />
+    <Content Include="img\content\l4d2\l4d2-4.jpg" />
+    <Content Include="img\content\l4d2\l4d2-5.jpg" />
+    <Content Include="img\content\mhw\mhw-0.jpg" />
+    <Content Include="img\content\mhw\mhw-1.jpg" />
+    <Content Include="img\content\mhw\mhw-2.jpg" />
+    <Content Include="img\content\mhw\mhw-3.gif" />
+    <Content Include="img\content\mhw\mhw-4.jpg" />
+    <Content Include="img\content\nba19\nba19-0.jpg" />
+    <Content Include="img\content\nba19\nba19-1.jpg" />
+    <Content Include="img\content\nba19\nba19-2.jpg" />
+    <Content Include="img\content\nba19\nba19-3.jpg" />
+    <Content Include="img\content\nier\nier-0.jpg" />
+    <Content Include="img\content\nier\nier-1.jpg" />
+    <Content Include="img\content\nier\nier-2.jpg" />
+    <Content Include="img\content\nier\nier-3.jpg" />
+    <Content Include="img\content\nier\nier-4.jpg" />
+    <Content Include="img\content\nms\nms-0.jpg" />
+    <Content Include="img\content\nms\nms-1.jpg" />
+    <Content Include="img\content\nms\nms-2.jpg" />
+    <Content Include="img\content\nms\nms-3.jpg" />
+    <Content Include="img\content\nms\nms-4.jpg" />
+    <Content Include="img\content\oni\oni-0.jpg" />
+    <Content Include="img\content\oni\oni-1.jpg" />
+    <Content Include="img\content\oni\oni-2.jpg" />
+    <Content Include="img\content\oni\oni-3.jpg" />
+    <Content Include="img\content\oni\oni-4.jpg" />
+    <Content Include="img\content\pes19\pes19-0.jpg" />
+    <Content Include="img\content\pes19\pes19-1.jpg" />
+    <Content Include="img\content\pes19\pes19-2.jpg" />
+    <Content Include="img\content\pes19\pes19-3.jpg" />
+    <Content Include="img\content\pes19\pes19-4.jpg" />
+    <Content Include="img\content\pt2\pt2-0.jpg" />
+    <Content Include="img\content\pt2\pt2-1.jpg" />
+    <Content Include="img\content\pt2\pt2-2.jpg" />
+    <Content Include="img\content\pt2\pt2-3.jpg" />
+    <Content Include="img\content\pt2\pt2-4.jpg" />
+    <Content Include="img\content\pt2\pt2-5.jpg" />
+    <Content Include="img\content\pt2\pt2-6.jpg" />
+    <Content Include="img\content\pubg\pubg-0.jpg" />
+    <Content Include="img\content\pubg\pubg-0.png" />
+    <Content Include="img\content\pubg\pubg-1.jpg" />
+    <Content Include="img\content\pubg\pubg-2.jpg" />
+    <Content Include="img\content\pubg\pubg-3.jpg" />
+    <Content Include="img\content\re7\re7-0.jpg" />
+    <Content Include="img\content\re7\re7-1.jpg" />
+    <Content Include="img\content\re7\re7-2.jpg" />
+    <Content Include="img\content\re7\re7-3.jpg" />
+    <Content Include="img\content\re7\re7-4.jpg" />
+    <Content Include="img\content\rust\rust-0.jpg" />
+    <Content Include="img\content\rust\rust-1.jpg" />
+    <Content Include="img\content\rust\rust-2.jpg" />
+    <Content Include="img\content\rust\rust-3.jpg" />
+    <Content Include="img\content\rust\rust-4.jpg" />
+    <Content Include="img\content\rust\rust-5.jpg" />
+    <Content Include="img\content\sn\sn-0.jpg" />
+    <Content Include="img\content\sn\sn-1.jpg" />
+    <Content Include="img\content\sn\sn-2.jpg" />
+    <Content Include="img\content\sn\sn-3.jpg" />
+    <Content Include="img\content\sn\sn-4.jpg" />
+    <Content Include="img\content\sn\sn-5.jpg" />
+    <Content Include="img\content\sn\sn-6.jpg" />
+    <Content Include="img\content\sottr\sottr-0.jpg" />
+    <Content Include="img\content\sottr\sottr-1.jpg" />
+    <Content Include="img\content\sottr\sottr-2.jpg" />
+    <Content Include="img\content\sottr\sottr-3.jpg" />
+    <Content Include="img\content\sottr\sottr-4.jpg" />
+    <Content Include="img\content\sottr\sottr-new.jpg" />
+    <Content Include="img\content\tesv\tesv-0.jpg" />
+    <Content Include="img\content\tesv\tesv-1.jpg" />
+    <Content Include="img\content\tesv\tesv-2.jpg" />
+    <Content Include="img\content\tesv\tesv-3.jpg" />
+    <Content Include="img\content\tesv\tesv-4.jpg" />
+    <Content Include="img\content\tesv\tesv-5.jpg" />
+    <Content Include="img\content\tf\tf-0.jpg" />
+    <Content Include="img\content\tf\tf-1.jpg" />
+    <Content Include="img\content\tf\tf-2.jpg" />
+    <Content Include="img\content\tf\tf-3.jpg" />
+    <Content Include="img\content\ts\ts-0.jpg" />
+    <Content Include="img\content\ts\ts-1.jpg" />
+    <Content Include="img\content\ts\ts-2.jpg" />
+    <Content Include="img\content\ts\ts-3.jpg" />
+    <Content Include="img\content\ts\ts-4.jpg" />
+    <Content Include="img\content\ts\ts-5.jpg" />
+    <Content Include="img\content\tw3\tw3-0.jpg" />
+    <Content Include="img\content\tw3\tw3-1.jpg" />
+    <Content Include="img\content\tw3\tw3-2.jpg" />
+    <Content Include="img\content\vsg\vsg-0.jpg" />
+    <Content Include="img\content\vsg\vsg-1.jpg" />
+    <Content Include="img\content\vsg\vsg-2.jpg" />
+    <Content Include="img\content\vsg\vsg-3.jpg" />
+    <Content Include="img\content\vsg\vsg-4.jpg" />
+    <Content Include="img\content\vsg\vsg-5.jpg" />
+    <Content Include="img\content\x4f\x4f-0.jpg" />
+    <Content Include="img\content\x4f\x4f-1.jpg" />
+    <Content Include="img\content\x4f\x4f-2.jpg" />
+    <Content Include="img\content\x4f\x4f-3.jpg" />
+    <Content Include="img\content\x4f\x4f-4.jpg" />
+    <Content Include="img\content\x4f\x4f-5.jpg" />
+    <Content Include="img\content\x4f\x4f-6.jpg" />
+    <Content Include="img\content\ykz0\ykz0-0.jpg" />
+    <Content Include="img\content\ykz0\ykz0-1.jpg" />
+    <Content Include="img\content\ykz0\ykz0-2.jpg" />
+    <Content Include="img\content\ykz0\ykz0-3.jpg" />
+    <Content Include="img\content\ykz0\ykz0-4.jpg" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\internet.png" />
+    <Content Include="img\jcb.png" />
+    <Content Include="img\money.png" />
+    <Content Include="img\visa.png" />
+    <Content Include="img\Witcher-3-415-2060x1288 - Copy.jpg" />
+    <Content Include="img\youtube.png" />
+    <Content Include="img\zalo.png" />
+    <Content Include="js\carousel.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-3.6.0.min.js" />
+    <Content Include="js\MasterPage.js" />
+    <Content Include="sanpham.aspx" />
+    <Content Include="thietke\imgbanner\assassins-creed.jpg" />
+    <Content Include="thietke\imgbanner\cod bo3.jpg" />
+    <Content Include="thietke\imgbanner\GTA-V-Michael.jpg" />
+    <Content Include="thietke\imgbanner\Hackbot.jpg" />
+    <Content Include="thietke\imgbanner\image.jpg" />
+    <Content Include="thietke\imgbanner\monster-hunter-world-damage-mods-8.jpg" />
+    <Content Include="thietke\imgbanner\reddeadredemption2.jpg" />
+    <Content Include="thietke\imgbanner\Ryse_Son_of_Rome_Artwork_06-1920x1080.jpg" />
+    <Content Include="thietke\imgbanner\watch-dogs-a_j2s7.jpg" />
+    <Content Include="thietke\imgbanner\Witcher-3-415-2060x1288.jpg" />
+    <Content Include="thongtin.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dangky.aspx.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangky.aspx.designer.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.aspx.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangnhap.aspx.designer.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.aspx.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giohang.aspx.designer.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GIOHANGDAO.cs" />
+    <Compile Include="Model\KHACHHANG.cs" />
+    <Compile Include="Model\KHACHHANGDAO.cs" />
+    <Compile Include="Model\LOAISANPHAM.cs" />
+    <Compile Include="Model\SANPHAMDAO.cs" />
+    <Compile Include="Model\SANPHAM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sanpham.aspx.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sanpham.aspx.designer.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thongtin.aspx.cs">
+      <DependentUpon>thongtin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thongtin.aspx.designer.cs">
+      <DependentUpon>thongtin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <Content Include="img\favicon.icon" />
+    <None Include="packages.config" />
+    <Content Include="thietke\banner.cdr" />
+    <Content Include="thietke\logo.cdr" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54090/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
